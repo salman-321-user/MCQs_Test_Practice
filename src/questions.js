@@ -1,82 +1,200 @@
-// ============================================================
-//  MCQ QUESTIONS
-//  To change the test, just edit this file.
-//
-//  Each question has:
-//    question : the question text
-//    options  : list of answer choices
-//    answer   : the correct option (must match one option EXACTLY)
-//
-//  You can add or remove questions — the app adjusts automatically.
-// ============================================================
-
-export const testTitle = 'General Knowledge Test'
+export const testTitle = 'GHQ Assistant - General Ability Test'
 
 const questions = [
+  // ========== ENGLISH ==========
   {
-    question: 'What is the capital of Pakistan?',
-    options: ['Karachi', 'Lahore', 'Islamabad', 'Peshawar'],
-    answer: 'Islamabad',
+    question: 'Choose the antonym of "OBSTINATE":',
+    options: ['Stubborn', 'Flexible', 'Rigid', 'Firm'],
+    answer: 'Flexible',
   },
   {
-    question: 'Which planet is known as the Red Planet?',
-    options: ['Venus', 'Mars', 'Jupiter', 'Saturn'],
-    answer: 'Mars',
+    question: 'Fill in the blank: "He is senior _____ me by two years."',
+    options: ['than', 'from', 'to', 'with'],
+    answer: 'to',
   },
   {
-    question: 'What is the largest ocean on Earth?',
-    options: ['Atlantic Ocean', 'Indian Ocean', 'Arctic Ocean', 'Pacific Ocean'],
-    answer: 'Pacific Ocean',
+    question: 'Choose the synonym of "CANDID":',
+    options: ['Deceitful', 'Frank', 'Secretive', 'Vague'],
+    answer: 'Frank',
   },
   {
-    question: 'How many continents are there in the world?',
+    question: 'Identify the correct passive voice: "She handles official files carefully."',
+    options: [
+      'Official files were handled carefully by her.',
+      'Official files are handled carefully by her.',
+      'Official files are being handled carefully by her.',
+      'Official files have been handled carefully by her.',
+    ],
+    answer: 'Official files are handled carefully by her.',
+  },
+  {
+    question: 'Choose the correctly spelled word:',
+    options: ['Bureaucracy', 'Beurocracy', 'Buercracy', 'Bureaucrasy'],
+    answer: 'Bureaucracy',
+  },
+  {
+    question: 'Idiom: "To bury the hatchet" means:',
+    options: ['To hide a weapon', 'To make peace', 'To start a fight', 'To dig a hole'],
+    answer: 'To make peace',
+  },
+  {
+    question: 'Idiom: "A wild goose chase" means:',
+    options: ['A successful hunt', 'A useless search', 'A fast race', 'A dangerous mission'],
+    answer: 'A useless search',
+  },
+  {
+    question: 'One word substitution: "A person who loves mankind" is:',
+    options: ['Philanthropist', 'Misanthrope', 'Patriot', 'Cynic'],
+    answer: 'Philanthropist',
+  },
+  {
+    question: 'Choose the correct preposition: "He is good _____ mathematics."',
+    options: ['in', 'at', 'on', 'for'],
+    answer: 'at',
+  },
+  {
+    question: 'Plural of "Mouse" (computer device):',
+    options: ['Mices', 'Mouses', 'Mice', 'Mousez'],
+    answer: 'Mice',
+  },
+  {
+    question: 'Antonym of "DIVERGE" is:',
+    options: ['Converge', 'Polish', 'Glaze', 'Modest'],
+    answer: 'Converge',
+  },
+  {
+    question: 'Translation: Choose the correct English translation of "وہ ہر روز اسکول جاتا ہے":',
+    options: [
+      'He goes to school every day.',
+      'He go to school every day.',
+      'He is going to school every day.',
+      'He went to school every day.',
+    ],
+    answer: 'He goes to school every day.',
+  },
+  {
+    question: 'Fill in the blank: "I have been living here _____ 2015."',
+    options: ['for', 'since', 'from', 'by'],
+    answer: 'since',
+  },
+  {
+    question: 'Choose the correct sentence:',
+    options: [
+      'One of my friend is a doctor.',
+      'One of my friends are a doctor.',
+      'One of my friends is a doctor.',
+      'One of my friend are a doctor.',
+    ],
+    answer: 'One of my friends is a doctor.',
+  },
+  {
+    question: 'Antonym of "HUMBLE":',
+    options: ['Modest', 'Arrogant', 'Simple', 'Meek'],
+    answer: 'Arrogant',
+  },
+  {
+    question: 'Synonym of "VITAL":',
+    options: ['Unimportant', 'Essential', 'Weak', 'Optional'],
+    answer: 'Essential',
+  },
+  {
+    question: 'Idiom: "To smell a rat" means:',
+    options: ['To detect something suspicious', 'To clean a house', 'To buy a pet', 'To cook food'],
+    answer: 'To detect something suspicious',
+  },
+  {
+    question: 'Choose the correct spelling:',
+    options: ['Maintainance', 'Maintenance', 'Maintenence', 'Maintanance'],
+    answer: 'Maintenance',
+  },
+
+  // ========== MATH / IQ ==========
+  {
+    question: 'What is 25% of 200?',
+    options: ['25', '40', '50', '75'],
+    answer: '50',
+  },
+  {
+    question: 'If 5 men complete a work in 10 days, how many days will 10 men take?',
+    options: ['20', '10', '5', '15'],
+    answer: '5',
+  },
+  {
+    question: 'Find the next number in the series: 2, 6, 12, 20, 30, ___',
+    options: ['36', '40', '42', '48'],
+    answer: '42',
+  },
+  {
+    question: 'The average of 10, 20, 30, 40, and 50 is:',
+    options: ['25', '30', '35', '40'],
+    answer: '30',
+  },
+  {
+    question: 'What is the LCM of 12 and 18?',
+    options: ['6', '36', '54', '72'],
+    answer: '36',
+  },
+  {
+    question: 'A man buys an item for Rs. 500 and sells it for Rs. 600. What is the profit percentage?',
+    options: ['10%', '15%', '20%', '25%'],
+    answer: '20%',
+  },
+  {
+    question: 'If x + 5 = 12, what is the value of x?',
     options: ['5', '6', '7', '8'],
     answer: '7',
   },
   {
-    question: 'What is the chemical symbol for water?',
-    options: ['H2O', 'O2', 'CO2', 'HO'],
-    answer: 'H2O',
+    question: 'What is the square root of 169?',
+    options: ['11', '12', '13', '14'],
+    answer: '13',
   },
   {
-    question: 'Who wrote the national anthem of Pakistan?',
-    options: ['Allama Iqbal', 'Hafeez Jalandhari', 'Faiz Ahmed Faiz', 'Ahmed Faraz'],
-    answer: 'Hafeez Jalandhari',
+    question: 'A train travels 300 km in 5 hours. What is its average speed?',
+    options: ['50 km/h', '55 km/h', '60 km/h', '65 km/h'],
+    answer: '60 km/h',
   },
   {
-    question: 'What is the boiling point of water at sea level?',
-    options: ['90°C', '100°C', '110°C', '120°C'],
-    answer: '100°C',
+    question: 'Find the odd one out: 3, 5, 7, 9, 11',
+    options: ['3', '5', '9', '11'],
+    answer: '9',
+  },
+
+  // ========== COMPUTER ==========
+  {
+    question: 'What is the shortcut key to insert a hyperlink in MS Word?',
+    options: ['Ctrl + H', 'Ctrl + K', 'Ctrl + L', 'Ctrl + M'],
+    answer: 'Ctrl + K',
   },
   {
-    question: 'Which gas do plants absorb from the atmosphere?',
-    options: ['Oxygen', 'Nitrogen', 'Carbon Dioxide', 'Hydrogen'],
-    answer: 'Carbon Dioxide',
+    question: 'In MS Excel, which function is used to add up values in a range of cells?',
+    options: ['=TOTAL()', '=ADD()', '=SUM()', '=COUNT()'],
+    answer: '=SUM()',
   },
   {
-    question: 'What is the longest river in the world?',
-    options: ['Amazon', 'Nile', 'Indus', 'Yangtze'],
-    answer: 'Nile',
+    question: 'Which key is pressed to start a slideshow presentation in MS PowerPoint?',
+    options: ['F1', 'F5', 'F7', 'F12'],
+    answer: 'F5',
   },
   {
-    question: 'How many days are there in a leap year?',
-    options: ['364', '365', '366', '367'],
-    answer: '366',
+    question: 'What does RAM stand for in computer systems?',
+    options: ['Read Access Memory', 'Random Access Memory', 'Rapid Action Memory', 'Run Automated Memory'],
+    answer: 'Random Access Memory',
   },
   {
-    question: 'What is the highest mountain in Pakistan?',
-    options: ['Nanga Parbat', 'K2', 'Broad Peak', 'Rakaposhi'],
-    answer: 'K2',
+    question: 'Which protocol is primarily used for secure browsing on the Internet?',
+    options: ['HTTP', 'FTP', 'HTTPS', 'SMTP'],
+    answer: 'HTTPS',
   },
   {
-    question: 'What is the square root of 144?',
-    options: ['10', '11', '12', '14'],
-    answer: '12',
+    question: 'What is the shortcut key to undo an action in MS Word?',
+    options: ['Ctrl + Y', 'Ctrl + Z', 'Ctrl + U', 'Ctrl + A'],
+    answer: 'Ctrl + Z',
   },
   {
-    question: 'Which organ pumps blood through the human body?',
-    options: ['Lungs', 'Liver', 'Brain', 'Heart'],
-    answer: 'Heart',
+    question: 'Which of the following is NOT an operating system?',
+    options: ['Windows', 'Linux', 'MS Word', 'macOS'],
+    answer: 'MS Word',
   },
   {
     question: 'What does CPU stand for?',
@@ -84,39 +202,120 @@ const questions = [
     answer: 'Central Processing Unit',
   },
   {
-    question: 'Which is the smallest prime number?',
-    options: ['0', '1', '2', '3'],
-    answer: '2',
+    question: 'In MS Excel, which shortcut is used to edit the active cell?',
+    options: ['F1', 'F2', 'F3', 'F4'],
+    answer: 'F2',
   },
   {
-    question: 'In which year did Pakistan gain independence?',
-    options: ['1945', '1947', '1948', '1950'],
-    answer: '1947',
+    question: 'What is the full form of WWW?',
+    options: ['World Wide Web', 'World Web Wide', 'Wide World Web', 'Web World Wide'],
+    answer: 'World Wide Web',
+  },
+
+  // ========== PAK STUDIES ==========
+  {
+    question: 'Who presented the famous Lahore Resolution on 23rd March 1940?',
+    options: [
+      'Quaid-e-Azam Muhammad Ali Jinnah',
+      'A. K. Fazlul Huq',
+      'Allama Muhammad Iqbal',
+      'Liaquat Ali Khan',
+    ],
+    answer: 'A. K. Fazlul Huq',
   },
   {
-    question: 'What is the largest planet in our solar system?',
-    options: ['Earth', 'Saturn', 'Jupiter', 'Neptune'],
-    answer: 'Jupiter',
+    question: 'Under which Constitution of Pakistan was the country first declared an "Islamic Republic"?',
+    options: ['1956 Constitution', '1962 Constitution', '1973 Constitution', 'Both A and C'],
+    answer: '1956 Constitution',
   },
   {
-    question: 'How many sides does a hexagon have?',
-    options: ['5', '6', '7', '8'],
-    answer: '6',
+    question: 'The Objectives Resolution was passed by the Constituent Assembly of Pakistan on:',
+    options: ['14th August 1947', '12th March 1949', '23rd March 1956', '16th October 1951'],
+    answer: '12th March 1949',
   },
   {
-    question: 'What is the hardest natural substance?',
-    options: ['Gold', 'Iron', 'Diamond', 'Quartz'],
-    answer: 'Diamond',
+    question: 'What is the highest mountain peak in Pakistan?',
+    options: ['Nanga Parbat', 'K2 (Mount Godwin-Austen)', 'Broad Peak', 'Tirich Mir'],
+    answer: 'K2 (Mount Godwin-Austen)',
   },
   {
-    question: 'Which language is used to style web pages?',
-    options: ['HTML', 'CSS', 'Python', 'SQL'],
-    answer: 'CSS',
+    question: 'Pakistan officially became a member of the United Nations on:',
+    options: ['14th August 1947', '30th September 1947', '1st January 1948', '23rd March 1948'],
+    answer: '30th September 1947',
   },
   {
-    question: 'What is 15 × 4?',
-    options: ['45', '50', '60', '65'],
-    answer: '60',
+    question: 'The book "Jinnah of Pakistan" was written by:',
+    options: ['Hector Bolitho', 'Stanley Wolpert', 'Philip Hitti', 'Ayesha Jalal'],
+    answer: 'Stanley Wolpert',
+  },
+  {
+    question: 'The partition of Bengal (1905) was annulled in which year?',
+    options: ['1909', '1911', '1908', '1910'],
+    answer: '1911',
+  },
+  {
+    question: 'Which is the longest river in Pakistan?',
+    options: ['Jhelum', 'Chenab', 'Indus', 'Ravi'],
+    answer: 'Indus',
+  },
+
+  // ========== ISLAMIAT ==========
+  {
+    question: 'Which Caliph is credited with the standardization and compilation of the Quran?',
+    options: ['Abu Bakr (RA)', 'Umar (RA)', 'Usman (RA)', 'Ali (RA)'],
+    answer: 'Usman (RA)',
+  },
+  {
+    question: 'Which principle in Islam emphasizes reasoning and analogy when direct texts are absent?',
+    options: ['Ijma', 'Qiyas', 'Ijtihad', 'Istislah'],
+    answer: 'Qiyas',
+  },
+  {
+    question: 'The Battle of Uhud was fought in which Hijri year?',
+    options: ['2 Hijri', '3 Hijri', '4 Hijri', '5 Hijri'],
+    answer: '3 Hijri',
+  },
+  {
+    question: 'Which surah is called "The Constitution of the Muslim State"?',
+    options: ['Al-Baqarah', 'Al-Nisa', 'Al-Maidah', 'Al-Anfal'],
+    answer: 'Al-Baqarah',
+  },
+  {
+    question: 'Which treaty allowed Muslims in Madina to coexist with non-Muslims?',
+    options: ['Treaty of Hudaybiyyah', 'Charter of Madina', 'Treaty of Khyber', 'Treaty of Taif'],
+    answer: 'Charter of Madina',
+  },
+  {
+    question: 'Which classical Islamic scholar is known for the work "Al-Muwatta"?',
+    options: ["Imam Shafi'i", 'Imam Malik', 'Imam Abu Hanifa', 'Imam Hanbal'],
+    answer: 'Imam Malik',
+  },
+
+  // ========== GENERAL KNOWLEDGE / SCIENCE ==========
+  {
+    question: 'Which is the largest ocean in the world?',
+    options: ['Atlantic Ocean', 'Indian Ocean', 'Pacific Ocean', 'Arctic Ocean'],
+    answer: 'Pacific Ocean',
+  },
+  {
+    question: 'The headquarters of the International Court of Justice (ICJ) is situated in:',
+    options: ['Geneva, Switzerland', 'New York, USA', 'The Hague, Netherlands', 'Vienna, Austria'],
+    answer: 'The Hague, Netherlands',
+  },
+  {
+    question: 'Which canal connects the Mediterranean Sea to the Red Sea?',
+    options: ['Panama Canal', 'Suez Canal', 'Kiel Canal', 'Erie Canal'],
+    answer: 'Suez Canal',
+  },
+  {
+    question: 'What is the capital of Turkey?',
+    options: ['Istanbul', 'Ankara', 'Izmir', 'Antalya'],
+    answer: 'Ankara',
+  },
+  {
+    question: 'The permanent headquarters of the World Health Organization (WHO) is located in:',
+    options: ['New York', 'Geneva', 'Paris', 'Vienna'],
+    answer: 'Geneva',
   },
   {
     question: 'Which is the national flower of Pakistan?',
@@ -124,39 +323,9 @@ const questions = [
     answer: 'Jasmine',
   },
   {
-    question: 'What is the freezing point of water?',
-    options: ['0°C', '10°C', '-10°C', '32°C'],
-    answer: '0°C',
-  },
-  {
-    question: 'Who is known as the father of computers?',
-    options: ['Alan Turing', 'Charles Babbage', 'Bill Gates', 'Steve Jobs'],
-    answer: 'Charles Babbage',
-  },
-  {
-    question: 'Which is the largest desert in the world (hot desert)?',
-    options: ['Thar', 'Gobi', 'Sahara', 'Kalahari'],
-    answer: 'Sahara',
-  },
-  {
-    question: 'How many minutes are in one hour?',
-    options: ['30', '45', '60', '100'],
-    answer: '60',
-  },
-  {
-    question: 'What is the main language spoken in Brazil?',
-    options: ['Spanish', 'Portuguese', 'English', 'French'],
-    answer: 'Portuguese',
-  },
-  {
-    question: 'Which vitamin do we get from sunlight?',
-    options: ['Vitamin A', 'Vitamin B', 'Vitamin C', 'Vitamin D'],
-    answer: 'Vitamin D',
-  },
-  {
-    question: 'What is the currency of Japan?',
-    options: ['Yuan', 'Won', 'Yen', 'Ringgit'],
-    answer: 'Yen',
+    question: 'What is the chemical symbol for gold?',
+    options: ['Go', 'Gd', 'Au', 'Ag'],
+    answer: 'Au',
   },
   {
     question: 'How many bones are in the adult human body?',
@@ -169,149 +338,9 @@ const questions = [
     answer: 'Cheetah',
   },
   {
-    question: 'What does RAM stand for?',
-    options: ['Read Access Memory', 'Random Access Memory', 'Run Access Memory', 'Random Active Memory'],
-    answer: 'Random Access Memory',
-  },
-  {
-    question: 'What is 100 ÷ 4?',
-    options: ['20', '25', '30', '40'],
-    answer: '25',
-  },
-  {
-    question: 'Which planet is closest to the Sun?',
-    options: ['Venus', 'Earth', 'Mercury', 'Mars'],
-    answer: 'Mercury',
-  },
-  {
-    question: 'Who was the founder of Pakistan?',
-    options: ['Allama Iqbal', 'Liaquat Ali Khan', 'Quaid-e-Azam Muhammad Ali Jinnah', 'Sir Syed Ahmad Khan'],
-    answer: 'Quaid-e-Azam Muhammad Ali Jinnah',
-  },
-  {
-    question: 'What is the largest mammal in the world?',
-    options: ['Elephant', 'Blue Whale', 'Giraffe', 'Shark'],
-    answer: 'Blue Whale',
-  },
-  {
-    question: 'How many colours are there in a rainbow?',
-    options: ['5', '6', '7', '8'],
-    answer: '7',
-  },
-  {
-    question: 'Which is the largest country in the world by area?',
-    options: ['China', 'USA', 'Canada', 'Russia'],
-    answer: 'Russia',
-  },
-  {
-    question: 'What is the chemical symbol for gold?',
-    options: ['Go', 'Gd', 'Au', 'Ag'],
-    answer: 'Au',
-  },
-  {
-    question: 'Which device is used to measure temperature?',
-    options: ['Barometer', 'Thermometer', 'Hygrometer', 'Speedometer'],
-    answer: 'Thermometer',
-  },
-  {
-    question: 'What is the value of π (pi) up to two decimal places?',
-    options: ['3.12', '3.14', '3.16', '3.41'],
-    answer: '3.14',
-  },
-  {
-    question: 'Which is the national sport of Pakistan?',
-    options: ['Cricket', 'Football', 'Hockey', 'Squash'],
-    answer: 'Hockey',
-  },
-  {
-    question: 'What is the full form of WWW?',
-    options: ['World Wide Web', 'World Web Wide', 'Wide World Web', 'Web World Wide'],
-    answer: 'World Wide Web',
-  },
-  {
-    question: 'How many players are there in a cricket team on the field?',
-    options: ['9', '10', '11', '12'],
-    answer: '11',
-  },
-  {
-    question: 'Which gas do humans need to breathe to survive?',
-    options: ['Carbon Dioxide', 'Oxygen', 'Nitrogen', 'Helium'],
-    answer: 'Oxygen',
-  },
-  {
-    question: 'What is the capital of the United Kingdom?',
-    options: ['Manchester', 'Paris', 'London', 'Dublin'],
-    answer: 'London',
-  },
-  {
-    question: 'Which shape has three sides?',
-    options: ['Square', 'Triangle', 'Circle', 'Pentagon'],
-    answer: 'Triangle',
-  },
-  {
-    question: 'What is the largest bird in the world?',
-    options: ['Eagle', 'Ostrich', 'Emu', 'Albatross'],
-    answer: 'Ostrich',
-  },
-  {
-    question: 'Which keyboard shortcut is used to copy?',
-    options: ['Ctrl + V', 'Ctrl + X', 'Ctrl + C', 'Ctrl + Z'],
-    answer: 'Ctrl + C',
-  },
-  {
-    question: 'What is 9 × 9?',
-    options: ['72', '81', '90', '99'],
-    answer: '81',
-  },
-  {
-    question: 'Which is the national poet of Pakistan?',
-    options: ['Mirza Ghalib', 'Allama Muhammad Iqbal', 'Faiz Ahmed Faiz', 'Mir Taqi Mir'],
-    answer: 'Allama Muhammad Iqbal',
-  },
-  {
-    question: 'What is the centre of an atom called?',
-    options: ['Electron', 'Proton', 'Nucleus', 'Neutron'],
-    answer: 'Nucleus',
-  },
-  {
-    question: 'How many hours are there in a day?',
-    options: ['12', '20', '24', '48'],
-    answer: '24',
-  },
-  {
-    question: 'Which ocean lies to the south of Pakistan?',
-    options: ['Pacific Ocean', 'Atlantic Ocean', 'Indian Ocean (Arabian Sea)', 'Arctic Ocean'],
-    answer: 'Indian Ocean (Arabian Sea)',
-  },
-  {
-    question: 'Which company developed the Windows operating system?',
-    options: ['Apple', 'Google', 'Microsoft', 'IBM'],
-    answer: 'Microsoft',
-  },
-  {
-    question: 'What is the plural of "child"?',
-    options: ['Childs', 'Children', 'Childes', 'Childrens'],
-    answer: 'Children',
-  },
-  {
-    question: 'Which is the smallest continent?',
-    options: ['Europe', 'Antarctica', 'Australia', 'South America'],
-    answer: 'Australia',
-  },
-  {
-    question: 'What is 25% of 200?',
-    options: ['25', '40', '50', '75'],
-    answer: '50',
-  },
-  {
-    question: 'Which part of the plant makes food through photosynthesis?',
-    options: ['Root', 'Stem', 'Leaf', 'Flower'],
-    answer: 'Leaf',
-  },
-  {
-    question: 'Which is the largest city of Pakistan by population?',
-    options: ['Lahore', 'Karachi', 'Faisalabad', 'Rawalpindi'],
-    answer: 'Karachi',
+    question: 'What is the national animal of Pakistan?',
+    options: ['Lion', 'Markhor', 'Indus River dolphin', 'Chinkara'],
+    answer: 'Markhor',
   },
 ]
 
